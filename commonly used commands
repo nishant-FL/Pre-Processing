@@ -1,0 +1,3 @@
+print(df['Borough'].value_counts(dropna=False))
+ebola_melt['str_split'] = ebola_melt['type_country'].str.split("_")
+ebola_melt['type'] = ebola_melt['str_split'].str.get(0)
